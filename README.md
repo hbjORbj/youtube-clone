@@ -1,3 +1,3 @@
 # Youtube Clone
 
->> Built with Vanilla JS, NodeJS, MongoDB, Heroku
+> Built with Vanilla JS, NodeJS, MongoDB, Heroku
