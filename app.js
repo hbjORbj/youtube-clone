@@ -18,7 +18,8 @@ app.use(helmet());
 app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(logger("combined"));
+app.use(logger("dev"));
+app.use("/static", express.static("static"));
 
 app.use(routes.home, globalRouter);
 app.use(routes.users, userRouter);
