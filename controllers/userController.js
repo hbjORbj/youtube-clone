@@ -11,5 +11,7 @@ export const postLogin = (req, res) => {};
 export const logout = (req, res) => {};
 
 export const userDetail = (req, res) => {};
-export const editProfile = (req, res) => {};
-export const changePassword = (req, res) => {};
+export const getEditProfile = (req, res) => {};
+export const postEditProfile = (req, res) => {};
+export const getChangePassword = (req, res) => {};
+export const postChangePassword = (req, res) => {};

@@ -1,5 +1,8 @@
 * {
   box-sizing: border-box;
+  &:focus {
+    outline: none;
+  }
 }
 
 body {
@@ -27,4 +30,25 @@ a {
 
 ul {
   list-style: none;
+}
+
+.link-button {
+  margin-top: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border: none;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 10px 15px;
+  color: white;
+  cursor: pointer;
+}
+
+.edit {
+  width: 30%;
+  background-color: $blueColor;
+}
+
+.delete {
+  width: 100%;
+  background-color: $redColor;
 }
