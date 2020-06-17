@@ -33,7 +33,19 @@
         </div>
       </div>
     </header>
-    <main></main>
+    <div class="home__wrapper">
+      ${videos.map(video => `
+      <a href="${routes.videoDetail(video.id)}">
+        <video controls="true" src="${video.fileUrl}"></video>
+        <h3 class="video__title">${video.title}</h3>
+        ${(video.views === 1) ? `
+        <h3 class="video__views">1 view</h3>
+        ` : `
+        <h3 class="video__views">${video.views} views</h3>
+        ` }
+      </a>
+      `).join('')}
+    </div>
     <footer>
       <i class="fab fa-youtube"></i>
       <span>Benny Joo's YouTube Clone &copy; ${new Date().getFullYear()}</span>

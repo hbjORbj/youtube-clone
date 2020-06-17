@@ -44,11 +44,28 @@ ul {
 }
 
 .edit {
-  width: 30%;
+  margin-top: 22px;
+  width: 130px;
   background-color: $blueColor;
 }
 
 .delete {
   width: 100%;
   background-color: $redColor;
+}
+
+video {
+  width: 400px;
+  height: 300px;
+}
+.video__title {
+  word-wrap: break-word;
+  font-size: 18px;
+  font-weight: 400;
+  max-width: 300px;
+}
+.video__views {
+  font-size: 14px;
+  font-weight: 300;
+  max-width: 300px;
 }

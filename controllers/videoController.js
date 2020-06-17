@@ -4,9 +4,9 @@ import Video from "../models/Video";
 export const home = async (req, res) => {
   try {
     const videos = await Video.find({});
-    res.render("home", { locals: { title: "Home", videos } });
+    res.render("home", { locals: { title: "Home", videos, routes } });
   } catch (error) {
-    res.render("home", { locals: { title: "Home", videos: [] } });
+    res.render("home", { locals: { title: "Home", videos: [], routes } });
   }
 };
 
@@ -22,7 +22,7 @@ export const search = async (req, res) => {
         $options: "i",
       },
     }).sort({ _id: -1 });
-    res.render("search", { locals: { title: "Search", videos, term } });
+    res.render("search", { locals: { title: "Search", videos, term, routes } });
   } catch (error) {
     res.redirect(routes.home);
   }

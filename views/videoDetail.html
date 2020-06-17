@@ -40,10 +40,13 @@
         </div>
         <div class="video__info">
           <a href=${routes.editVideo(video.id)}><button class="link-button edit">Edit Video</button></a>
-          <h3></h3>
-          <p></p>
-          <span></span>
-        </div>
+          <h3>${video.title}</h3>
+          <p>${video.description}</p>
+          ${(video.views === 1) ? `
+            <h3 class="video__views">1 view</h3>
+            ` : `
+            <h3 class="video__views">${video.views} views</h3>
+            ` }        </div>
         <div class="video__comments"></div>
       </div>
     </main>
