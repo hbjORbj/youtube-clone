@@ -34,7 +34,7 @@
     "cookie-parser": "^1.4.5",
     "del": "^5.1.0",
     "dotenv": "^8.2.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-es6-template-engine": "^2.2.2",
     "gulp": "^4.0.2",
     "gulp-csso": "^4.0.1",
